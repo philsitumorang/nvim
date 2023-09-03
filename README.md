@@ -1,17 +1,19 @@
 # nvim
 Config for the NeoVim >=0.9
 
+<img width="1312" alt="neovim" src="https://github.com/philsitumorang/nvim/assets/5146661/548c7d87-866b-4d5f-b85a-cd1ed807e7e9">
+
 ### Plugins
-Package Manager - Lazy.nvim
-Finder, Filter, Previews - Telescope
-LazyGit - UI For Git with usefull hotkeys
-File Explorer - Nvim Tree
-Code highlighters - Treesitter
-Language things supporter (like go to defenition and etc) - LSP + Mason
-Formatter, Diagnostic (here we can define eslint, prettier, and etc) - Null-ls
-Tabs - BarBar
-Terminal inside Neovim - NvChad Terminal
-Autocomplete, suggest, snippets - CMP
+- Package Manager - Lazy.nvim
+- Finder, Filter, Previews - Telescope
+- LazyGit - UI For Git with usefull hotkeys
+- File Explorer - Nvim Tree
+- Code highlighters - Treesitter
+- Language things supporter (like go to defenition and etc) - LSP + Mason
+- Formatter, Diagnostic (here we can define eslint, prettier, and etc) - Null-ls
+- Tabs - BarBar
+- Terminal inside Neovim - NvChad Terminal
+- Autocomplete, suggest, snippets - CMP
 
 ### About this config
 I previously used NvChad, but I found it to be too complex for my needs. That's why I decided it was a great moment to create my own config for NeoVim. It runs faster than typical popular builds because I have limited the features to only what is necessary for my purposes.
