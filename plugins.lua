@@ -12,14 +12,7 @@ return {
 	{ "hrsh7th/cmp-path" },
 	{
 		"numToStr/Comment.nvim",
-		keys = {
-			{ "gcc", mode = "n", desc = "Comment toggle current line" },
-			{ "gc", mode = { "n", "o" }, desc = "Comment toggle linewise" },
-			{ "gc", mode = "x", desc = "Comment toggle linewise (visual)" },
-			{ "gbc", mode = "n", desc = "Comment toggle current block" },
-			{ "gb", mode = { "n", "o" }, desc = "Comment toggle blockwise" },
-			{ "gb", mode = "x", desc = "Comment toggle blockwise (visual)" },
-		},
+		keys = require("mappings.comment"),
 		config = function()
 			require("Comment").setup()
 		end,
@@ -82,11 +75,11 @@ return {
 		end,
 	},
 	{
-		"EdenEast/nightfox.nvim",
+		"RRethy/nvim-base16",
 		lazy = false,
-		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme terafox]])
+			local theme = require("themes")
+			require("base16-colorscheme").setup(theme.ice)
 		end,
 	},
 }
