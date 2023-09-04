@@ -1,4 +1,4 @@
-package.path = package.path .. ';' .. os.getenv("HOME") .. '/.config/nvim/?.lua'
+package.path = package.path .. ";" .. os.getenv("HOME") .. "/.config/nvim/?.lua"
 require("configs.default")
 require("mappings.default")
 
