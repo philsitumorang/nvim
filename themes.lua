@@ -33,7 +33,7 @@ M.ice = {
   base0A = "#FFA500",
   base0B = "#61b1c5",
   base0C = "#3d9db2",
-  base0D = "#1a89a0",
+  base0D = "#2a89a0",
   base0E = "#00809f",
   base0F = "#c8e8f1"
 }
