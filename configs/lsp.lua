@@ -17,6 +17,7 @@ mason.setup({})
 lspconfig.setup({
 	ensure_installed = {
 		"tailwindcss",
+		"ts_ls"
 	},
 })
 require("lspconfig").tailwindcss.setup({})

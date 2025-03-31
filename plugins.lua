@@ -33,15 +33,6 @@ return {
 	{ "nvim-tree/nvim-web-devicons", lazy = true },
 	{ "nvim-telescope/telescope.nvim", tag = "0.1.2", dependencies = { "nvim-lua/plenary.nvim" } },
 	{
-		"kdheepak/lazygit.nvim",
-		keys = {
-			{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-		},
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
-	{
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
