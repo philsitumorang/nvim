@@ -30,10 +30,6 @@ require("configs.treesitter")
 require("configs.lsp")
 -- LSP (mappings)
 require("mappings.lsp")
--- Null-ls settings
-require("configs.null-ls")
--- BarBar
-require("mappings.barbar")
 -- NvChad Terminal
 require("configs.terminal")
 -- CMP settings

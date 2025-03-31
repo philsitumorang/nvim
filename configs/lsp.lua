@@ -20,4 +20,4 @@ lspconfig.setup({
 	},
 })
 require("lspconfig").tailwindcss.setup({})
-require("lspconfig").tsserver.setup(snippetSupport)
+require("lspconfig").ts_ls.setup(snippetSupport)

@@ -1,21 +1,5 @@
 return {
-	{ "github/copilot.vim", lazy = false },
-
-	{
-		"folke/noice.nvim",
-		event = "VeryLazy",
-		opts = {
-			-- add any options here
-		},
-		dependencies = {
-			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-			"MunifTanjim/nui.nvim",
-			-- OPTIONAL:
-			--   `nvim-notify` is only needed, if you want to use the notification view.
-			--   If not available, we use `mini` as the fallback
-			"rcarriga/nvim-notify",
-		},
-	},
+	-- { "github/copilot.vim", lazy = false },
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
 	{ "onsails/lspkind.nvim" },
@@ -37,31 +21,6 @@ return {
 		config = function()
 			require("nvterm").setup()
 		end,
-	},
-	{
-		"romgrk/barbar.nvim",
-		dependencies = {
-			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
-			"nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
-		},
-		init = function()
-			vim.g.barbar_auto_setup = false
-		end,
-		opts = {
-			-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-			-- animation = true,
-			-- insert_at_start = true,
-			-- …etc.
-		},
-		version = "^1.0.0", -- optional: only update when a new 1.x version is released
-	},
-	{
-		"neovim/nvim-lspconfig",
-		dependencies = {
-			{
-				"jose-elias-alvarez/null-ls.nvim",
-			},
-		},
 	},
 	{ "nvim-treesitter/nvim-treesitter" },
 	{
@@ -86,15 +45,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.cmd([[colorscheme tokyonight-storm]])
-		end,
-	},
-	{
-		"RRethy/nvim-base16",
-		lazy = false,
-		config = function()
-			local theme = require("themes")
-			require("base16-colorscheme").setup(theme.ice)
+			vim.cmd([[colorscheme tokyonight-storm]])
 		end,
 	},
 }
