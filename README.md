@@ -12,3 +12,30 @@ Config for NeoVim >=0.11.0
 - Formatter, Diagnostic (here we can define eslint, prettier, and etc) - Null-ls
 - Terminal inside Neovim - NvChad Terminal
 - Autocomplete, suggests, snippets - CMP
+- None-ls - formater with pretterd and eslint
+
+### How to install
+```
+npm install -g eslint_d prettierd
+brew install ripgrep # support live grep in Telescope
+```
+
+### How I'm using it
+Space + ff - find files in project
+Space + fg - live grep
+Space + fb - show all buffers. Normal mode: dd will delete selected buffer
+Space + fc - find available colorschemes
+Space + n - file tree toggle
+Space + h - toggle horizontal terminal
+Space + v - toggle vertical terminal
+
+
+### Structure
+#### Configs
+You can find here all configs for plugins.
+#### Mappings
+Usually I keep all keymaps here, but I have some techical debt, so that's why you can find keymaps in plugins.lua.
+#### Init.lua
+imports and initial configuration.
+#### Plugins.lua
+Lazy.nvim - All plugins are here.
