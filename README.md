@@ -1,5 +1,5 @@
 # nvim
-Config for the NeoVim >=0.9
+Config for NeoVim >=0.11.0
 
 <img width="1312" alt="neovim" src="https://github.com/philsitumorang/nvim/assets/5146661/548c7d87-866b-4d5f-b85a-cd1ed807e7e9">
 
