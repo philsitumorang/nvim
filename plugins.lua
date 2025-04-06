@@ -1,5 +1,4 @@
 return {
-	-- { "github/copilot.vim", lazy = false },
 	{ "neovim/nvim-lspconfig" },
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
@@ -31,7 +30,7 @@ return {
 		},
 	},
 	{ "nvim-tree/nvim-web-devicons", lazy = true },
-	{ "nvim-telescope/telescope.nvim", tag = "0.1.2", dependencies = { "nvim-lua/plenary.nvim" } },
+	{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
