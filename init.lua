@@ -20,8 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(require("plugins"))
 -- Telescope mapping
 require("mappings.telescope")
--- LazyGit settings
-require("configs.lazygit")
 -- NvimTree settings
 require("configs.tree")
 -- Treesitter settings
