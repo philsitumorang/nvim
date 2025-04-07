@@ -29,13 +29,13 @@ cd ~/.config && git clone git@github.com:philsitumorang/nvim.git
 
 ### How I'm using it
 
-Space + ff - find files in project
-Space + fg - live grep
-Space + fb - show all buffers. Normal mode: dd will delete selected buffer
-Space + fc - find available colorschemes
-Space + n - file tree toggle
-Space + tt - toggle terminal
-Space + gg - lazygit 
+- Space + ff - find files in project
+- Space + fg - live grep
+- Space + fb - show all buffers. Normal mode: dd will delete selected buffer
+- Space + fc - find available colorschemes
+- Space + n - file tree toggle
+- Space + tt - toggle terminal
+- Space + gg - lazygit
 
 ### Structure
 
