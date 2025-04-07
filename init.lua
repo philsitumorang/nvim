@@ -28,7 +28,5 @@ require("configs.treesitter")
 require("configs.lsp")
 -- LSP (mappings)
 require("mappings.lsp")
--- NvChad Terminal
-require("configs.terminal")
 -- CMP settings
 require("configs.cmp")

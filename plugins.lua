@@ -9,17 +9,12 @@ return {
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/nvim-cmp" },
 	{ "hrsh7th/cmp-path" },
+  { "tpope/vim-fugitive" },
 	{
 		"numToStr/Comment.nvim",
 		keys = require("mappings.comment"),
 		config = function()
 			require("Comment").setup()
-		end,
-	},
-	{
-		"NvChad/nvterm",
-		config = function()
-			require("nvterm").setup()
 		end,
 	},
 	{ "nvim-treesitter/nvim-treesitter" },
@@ -56,6 +51,24 @@ return {
           end
         end,
       })
+    end,
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require("toggleterm").setup()
+      vim.keymap.set("n", "<leader>gg", function()
+        require("toggleterm.terminal").Terminal
+          :new({ cmd = "lazygit", hidden = true, direction = "float" })
+          :toggle()
+      end, { desc = "LazyGit (in term)" })
+      vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Terminal" })
     end,
   },
 	{
