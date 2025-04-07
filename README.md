@@ -15,7 +15,7 @@ Config for NeoVim >=0.11.0
 - Terminal inside Neovim - ToggleTerm
 - Autocomplete, suggests, snippets - CMP
 - TUI Git - Lazygit
-- None-ls - formater with pretterd and eslint
+- None-ls - formater with prettierd and eslint
 
 ### How to install
 
@@ -23,6 +23,8 @@ Config for NeoVim >=0.11.0
 npm install -g eslint_d prettierd
 brew install ripgrep # support live grep in Telescope
 brew install lazygit # support TUI Git
+
+cd ~/.config && git clone git@github.com:philsitumorang/nvim.git
 ```
 
 ### How I'm using it
@@ -32,8 +34,8 @@ Space + fg - live grep
 Space + fb - show all buffers. Normal mode: dd will delete selected buffer
 Space + fc - find available colorschemes
 Space + n - file tree toggle
-Space + h - toggle horizontal terminal
-Space + v - toggle vertical terminal
+Space + tt - toggle terminal
+Space + gg - lazygit 
 
 ### Structure
 
